@@ -1,0 +1,17 @@
+<p>Componente de demostración</p>
+{{ nombre }}
+
+<button (click)="upperCase()">Alterna</button>
+<br />
+
+<input type="number" #num1 />
+<br />
+<input type="number" #num2 />
+
+<br />
+<button (click)="sumaF(num1.value, num2.value)">Suma</button>
+{{ suma }}
+
+<br />
+<button (click)="restaF(num1.value, num2.value)">Resta</button>
+{{ resta }}
