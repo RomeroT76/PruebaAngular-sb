@@ -4,14 +4,8 @@
 <button (click)="upperCase()">Alterna</button>
 <br />
 
-<input type="number" #num1 />
-<br />
-<input type="number" #num2 />
+<input type="text" #expresion>
 
-<br />
-<button (click)="sumaF(num1.value, num2.value)">Suma</button>
-{{ suma }}
-
-<br />
-<button (click)="restaF(num1.value, num2.value)">Resta</button>
-{{ resta }}
+<br>
+<button (click)="calculate(expresion.value)" class="cBtn">calculate</button>
+{{ result }}

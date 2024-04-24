@@ -9,8 +9,7 @@ import { Component } from '@angular/core';
 export class DemoComponent {
   nombre = 'Roberto Alejandro';
   estado = true;
-  suma = 0;
-  resta = 0;
+  result = 0;
 
   upperCase() {
     if (this.estado) {
@@ -22,15 +21,7 @@ export class DemoComponent {
     }
   }
 
-  sumaF(n1: string, n2: string) {
-    const num1 = parseInt(n1);
-    const num2 = parseInt(n2);
-    this.suma = num1 + num2;
-  }
-
-  restaF(n1: string, n2: string) {
-    const num1 = parseInt(n1);
-    const num2 = parseInt(n2);
-    this.resta = num1 - num2;
+  calculate(expresion: string) {
+    this.result = eval(expresion);
   }
 }

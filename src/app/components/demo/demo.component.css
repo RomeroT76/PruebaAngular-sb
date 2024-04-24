@@ -1,0 +1,7 @@
+.cBtn {
+    background-color: rgb(110, 110, 110);
+}
+
+.cBtn:hover {
+    background-color: rgb(0, 124, 128);
+}
